@@ -1,0 +1,56 @@
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# Node.js
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.pnpm-debug.log
+.npm
+.yarn
+.pnp.*
+
+# Environment files
+.env
+.env.*
+*.env
+
+# Development files
+.vscode
+.idea
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist
+build
+out
+*.log
+
+# Testing
+coverage
+.nyc_output
+__tests__
+test
+tests
+
+# Documentation
+docs
+*.md
+LICENSE
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Misc
+*.zip
+*.tar.gz
+*.tgz
+tmp
+temp

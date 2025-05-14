@@ -77,7 +77,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
      ```
   2. Run tests with:
      ```bash
-     pytest
+     pytest --import-mode=importlib
      ```
 
 - Please ensure your code passes all tests before submitting a PR.

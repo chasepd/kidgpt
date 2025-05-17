@@ -120,6 +120,7 @@ class Persona:
                 connection.rollback()
             return False
         finally:
-            if connection is not None and connection.is_connected():
+            if cursor is not None:
                 cursor.close()
-                connection.close() 
+            if connection is not None and connection.is_connected():
+                connection.close()

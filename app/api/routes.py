@@ -270,10 +270,10 @@ def settings_page():
             new_password_confirm = request.form.get("new_password_confirm")
             if new_password != new_password_confirm:
                 error = "Change Password Failed: New passwords do not match."
-                logging.info(f"Change password failed, new passwords do not match")
+                logging.info("Change password failed, new passwords do not match")
             elif not bcrypt.checkpw(old_password.encode(), user.password_hash.encode()):
                 error = "Change Password Failed: Old password is incorrect."
-                logging.info(f"Change password failed, old password is incorrect")
+                logging.info("Change password failed, old password is incorrect")
             else:
                 password_hash = bcrypt.hashpw(new_password.encode(), bcrypt.gensalt()).decode()
                 user.password_hash = password_hash
